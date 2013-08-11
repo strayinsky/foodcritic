@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" name="Default" comment="" />
+    <list default="true" id="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/food/forms.py" afterPath="$PROJECT_DIR$/food/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="foodcritic.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/models.py" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1375568535233" ignored="false" />
@@ -12,7 +16,7 @@
     <file path="/Django Console" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1375476154562" ignored="false" />
     <file path="/temp.html" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1375493412662" ignored="false" />
     <file path="/admin.py" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1375569150444" ignored="false" />
-    <file path="/forms.py" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1376246540130" ignored="false" />
+    <file path="/forms.py" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1376247599061" ignored="false" />
     <file path="/addrestaurant.html" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1375669448320" ignored="false" />
     <file path="/editrestaurant.html" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1375677062814" ignored="false" />
     <file path="/adddish.html" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1375733043795" ignored="false" />
@@ -25,6 +29,7 @@
     <file path="/restaurant_text" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1376077542259" ignored="false" />
     <file path="/search.html" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1376086494560" ignored="false" />
     <file path="/restaurant_text.txt" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1376086503126" ignored="false" />
+    <file path="/Dummy.txt" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1376247612713" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +74,7 @@
       <file leaf-file-name="forms.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/food/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="10" selection-start="2460" selection-end="2478" vertical-scroll-proportion="0.8715847">
+            <state line="76" column="76" selection-start="2137" selection-end="2137" vertical-scroll-proportion="0.61095893">
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -131,6 +136,14 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -159,7 +172,7 @@
     <option name="width" value="1436" />
     <option name="height" value="878" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -382,7 +395,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
@@ -751,7 +764,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/food/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="10" selection-start="2460" selection-end="2478" vertical-scroll-proportion="0.8715847">
+        <state line="76" column="76" selection-start="2137" selection-end="2137" vertical-scroll-proportion="0.61095893">
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>

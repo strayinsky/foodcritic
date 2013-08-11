@@ -74,7 +74,7 @@ class CitySearchForm(ModelSearchForm):
     def search(self):
         # First, store the SearchQuerySet received from other processing.
 
-        sqs = super(CitySearchForm, self).search().models(Restaurant)
+        sqs = super(CitySearchForm, self).search().models(*self.get_models())
 
         if not self.is_valid():
             return self.no_query_found()
