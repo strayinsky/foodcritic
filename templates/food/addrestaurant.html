@@ -1,4 +1,14 @@
+{% extends "base.html" %}
+
+{% load bootstrap_toolkit %}
+
+{% block content %}
+
+<h1>Add a Restaurant Here!!!</h1>
+
 <form action="{% url 'food:addrestaurant' %}" method="post">{% csrf_token %}
-{{ form.as_p }}
+    {{ form|as_bootstrap }}
 <input type="submit" value="Submit" />
 </form>
+
+{% endblock %}

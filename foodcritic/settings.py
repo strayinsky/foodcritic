@@ -138,6 +138,9 @@ INSTALLED_APPS = (
 
     #haystack
     'haystack',
+
+    #bootstrap toolkit
+    'bootstrap_toolkit',
 )
 
 
