@@ -1,0 +1,9 @@
+<form action="{% url 'food:dishandgrade' restaurant.id %}" method="post">{% csrf_token %}
+    {{ dishes.management_form }}
+    {% for dish in dishes.forms %}
+        {{ dish.as_p }}
+        {{ dish.grade.as_p }}
+    <hr>
+    {% endfor %}
+    <input type="submit" value="Submit" />
+</form>

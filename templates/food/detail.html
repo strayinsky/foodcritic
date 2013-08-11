@@ -1,0 +1,38 @@
+<h1>{{ restaurant.name }}</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<table>
+<th></th>
+<th>Dish</th>
+<th>Description</th>
+{% for dish in restaurant.dish_set.all %}
+    <tr>
+    <td><a href="{% url 'food:editdish' dish.id %}">Edit</a></td>
+    <td>{{dish.name}}</td>
+    <td>{{ dish.description }}</td>
+    <td><a href="{% url 'food:gradedish' dish.id %}">Grade</a></td>
+    </tr>
+{% endfor %}
+
+</table>
+<p><a href="{% url 'food:adddish' restaurant.id %}">Add a dish to this restaurant's menu</a></p>
+<p><a href="{% url 'food:dishandgrade' restaurant.id %}">Add a dish and grade it at the same time!</a></p>
+
+
+{% comment %}
+<h1>{{ restaurant.rest_name }}</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action = "{% url 'food:grade' restaurant.id %}" method = "POST">
+{% csrf_token %}
+{% for dish in restaurant.dish_set.all %}
+    {{ dish.name}}:
+        <input type="number" name="{{ dish.id }}" >
+        <input type="text" name = "{{ dish.id }}">
+        </br>
+{% endfor %}
+<input type="submit" value="Add My Grades" />
+</form>
+{% endcomment %}

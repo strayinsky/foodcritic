@@ -1,0 +1,14 @@
+{% if restaurant_list %}
+    <ul>
+    {% for restaurant in restaurant_list %}
+        <li>
+            <a href="{% url 'food:detail' restaurant.id %}">{{ restaurant.name }}</a>
+            <a href="{% url 'food:editrestaurant' restaurant.id %}">Edit</a>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No restaurants are available.</p>
+{% endif %}
+
+<p><a href="{% url 'food:addrestaurant' %}">Add a Restaurant</a></p>
