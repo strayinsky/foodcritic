@@ -1,24 +1,33 @@
-<h1>{{ restaurant.name }}</h1>
+{% extends "base.html" %}
+{% load bootstrap_toolkit %}
 
+<!-- i want to insert one more css file that gives me the grid stuff from bootstrap - how do i do that? it's not working right now because its not in the head part of the html -->
+ <link href="/Users/strayinsky/documents/foodcritic/static/grid.css" rel="stylesheet">
+{% block content %}
+
+    <div class="page-header">
+        <h1>{{ restaurant.name }}   <small>{{ restaurant.city }},{{restaurant.country}}</small></h1>
+    </div>
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
-<table>
-<th></th>
-<th>Dish</th>
-<th>Description</th>
+<div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-4">Dish</div>
+    <div class="col-lg-4">Description</div>
+    <div class="col-lg-2"></div>
+</div>
 {% for dish in restaurant.dish_set.all %}
-    <tr>
-    <td><a href="{% url 'food:editdish' dish.id %}">Edit</a></td>
-    <td>{{dish.name}}</td>
-    <td>{{ dish.description }}</td>
-    <td><a href="{% url 'food:gradedish' dish.id %}">Grade</a></td>
-    </tr>
+    <div class="row">
+        <div class="span2"><a href="{% url 'food:editdish' dish.id %}">Edit</a></div>
+        <div class="span4">{{dish.name}}</div>
+        <div class="span4">{{ dish.description }}</div>
+        <div class="span2"><a href="{% url 'food:gradedish' dish.id %}">Grade</a></div>
+    </div>
 {% endfor %}
 
-</table>
 <p><a href="{% url 'food:adddish' restaurant.id %}">Add a dish to this restaurant's menu</a></p>
 <p><a href="{% url 'food:dishandgrade' restaurant.id %}">Add a dish and grade it at the same time!</a></p>
-
+{% endblock %}
 
 {% comment %}
 <h1>{{ restaurant.rest_name }}</h1>

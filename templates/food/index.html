@@ -1,16 +1,31 @@
+{% extends "base.html" %}
 {% load bootstrap_toolkit %}
+{% block content %}
 
-{% if restaurant_list %}
-    <ul>
-    {% for restaurant in restaurant_list %}
-        <li>
-            <a href="{% url 'food:detail' restaurant.id %}">{{ restaurant.name }}</a>
-            <a href="{% url 'food:editrestaurant' restaurant.id %}">Edit</a>
-        </li>
-    {% endfor %}
+    <div class="page-header">
+         <h1>Example page header <small>Subtext for header</small></h1>
+    </div>
+<div class="row">
+<div class="span12">
+    {% if restaurant_list %}
+        <ul class="inline">
+            {% for restaurant in restaurant_list %}
+                <li>
+                    <a href="{% url 'food:detail' restaurant.id %}">{{ restaurant.name }}</a>
+                    <a href="{% url 'food:editrestaurant' restaurant.id %}"><span class="label label-success">Edit</span></a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No restaurants are available.</p>
+    {% endif %}
+    <ul class="nav nav-list">
+        <li class="divider"></li>
     </ul>
-{% else %}
-    <p>No restaurants are available.</p>
-{% endif %}
+     <p><a href="{% url 'food:addrestaurant' %}">Add a Restaurant</a></p>
+</div>
+</div>
 
-<p><a href="{% url 'food:addrestaurant' %}">Add a Restaurant</a></p>
+
+
+{% endblock %}

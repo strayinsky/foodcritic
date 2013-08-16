@@ -2,24 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/food/addrestaurant.html" afterPath="$PROJECT_DIR$/templates/food/addrestaurant.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/food/detail.html" afterPath="$PROJECT_DIR$/templates/food/detail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/food/index.html" afterPath="$PROJECT_DIR$/templates/food/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/foodcritic/settings.py" afterPath="$PROJECT_DIR$/foodcritic/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="foodcritic.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/models.py" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1375568535233" ignored="false" />
     <file path="/views.py" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1375945555677" ignored="false" />
-    <file path="/detail.html" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1375922520336" ignored="false" />
-    <file path="/index.html" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1375672216876" ignored="false" />
+    <file path="/detail.html" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1376694401955" ignored="false" />
+    <file path="/index.html" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1376673398037" ignored="false" />
     <file path="/urls.py" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1376092094671" ignored="false" />
     <file path="/Django Console" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1375476154562" ignored="false" />
     <file path="/temp.html" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1375493412662" ignored="false" />
     <file path="/admin.py" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1375569150444" ignored="false" />
     <file path="/forms.py" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1376247599061" ignored="false" />
-    <file path="/addrestaurant.html" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1376249330052" ignored="false" />
+    <file path="/addrestaurant.html" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1376533169215" ignored="false" />
     <file path="/editrestaurant.html" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1375677062814" ignored="false" />
     <file path="/adddish.html" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1375733043795" ignored="false" />
     <file path="/editdish.html" changelist="54d973f2-ae99-4f35-a6b1-e5984ef5fedb" time="1375736425388" ignored="false" />
@@ -66,7 +64,25 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/food/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="-0.6666667">
+            <state line="30" column="0" selection-start="880" selection-end="894" vertical-scroll-proportion="-20.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/food/detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="175" selection-start="231" selection-end="231" vertical-scroll-proportion="0.11162791">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="grade.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/food/grade.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -81,10 +97,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addrestaurant.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="addrestaurant.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/food/addrestaurant.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="3" selection-start="81" selection-end="81" vertical-scroll-proportion="0.2167043">
+            <state line="0" column="0" selection-start="0" selection-end="25" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editdish.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/food/editdish.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -93,7 +118,7 @@
       <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="33" selection-start="1098" selection-end="1108" vertical-scroll-proportion="-3.7916667">
+            <state line="39" column="0" selection-start="1045" selection-end="1045" vertical-scroll-proportion="-26.0">
               <folding />
             </state>
           </provider>
@@ -102,7 +127,7 @@
       <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/food/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="76" selection-start="2137" selection-end="2137" vertical-scroll-proportion="0.0">
+            <state line="80" column="0" selection-start="2213" selection-end="2213" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -114,35 +139,6 @@
         <entry file="file://$PROJECT_DIR$/foodcritic/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="141" column="22" selection-start="4895" selection-end="4895" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search_indexes.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/food/search_indexes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="restaurant_text.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/search/indexes/food/restaurant_text.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="18" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dish_text.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/search/indexes/food/dish_text.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -166,7 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/food/views.py" />
         <option value="$PROJECT_DIR$/food/models.py" />
         <option value="$PROJECT_DIR$/templates/search/indexes/food/restaurant_text" />
         <option value="$PROJECT_DIR$/foodcritic/urls.py" />
@@ -179,9 +174,10 @@
         <option value="$PROJECT_DIR$/food/urls.py" />
         <option value="$PROJECT_DIR$/food/forms.py" />
         <option value="$PROJECT_DIR$/foodcritic/settings.py" />
-        <option value="$PROJECT_DIR$/templates/food/index.html" />
         <option value="$PROJECT_DIR$/templates/food/base.html" />
         <option value="$PROJECT_DIR$/templates/food/addrestaurant.html" />
+        <option value="$PROJECT_DIR$/templates/food/index.html" />
+        <option value="$PROJECT_DIR$/templates/food/detail.html" />
       </list>
     </option>
   </component>
@@ -681,27 +677,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/search/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="87" selection-start="518" selection-end="518" vertical-scroll-proportion="-6.2040815">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodcritic/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="859" selection-end="859" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/python/2.7.5/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/django/db/models/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="6" selection-start="2085" selection-end="2085" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python2.7/site-packages/haystack/backends/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.022988506">
@@ -750,15 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/food/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="76" selection-start="2137" selection-end="2137" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/foodcritic/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="141" column="22" selection-start="4895" selection-end="4895" vertical-scroll-proportion="0.0">
@@ -775,9 +741,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/food/index.html">
+    <entry file="file://$PROJECT_DIR$/food/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="-0.6666667">
+        <state line="80" column="0" selection-start="2213" selection-end="2213" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/food/editdish.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -789,16 +764,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/templates/food/addrestaurant.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="33" selection-start="1098" selection-end="1108" vertical-scroll-proportion="-3.7916667">
+        <state line="0" column="0" selection-start="0" selection-end="25" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/food/addrestaurant.html">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="3" selection-start="81" selection-end="81" vertical-scroll-proportion="0.2167043">
+        <state line="39" column="0" selection-start="1045" selection-end="1045" vertical-scroll-proportion="-26.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/food/grade.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/food/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="880" selection-end="894" vertical-scroll-proportion="-20.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/food/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="175" selection-start="231" selection-end="231" vertical-scroll-proportion="0.11162791">
           <folding />
         </state>
       </provider>
