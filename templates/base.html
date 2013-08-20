@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 {% load bootstrap_toolkit %}
 {% load url from future %}
+{% load staticfiles %}
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -9,6 +10,7 @@
     <meta name="author" content="Yin Li">
     {% bootstrap_stylesheet_tag %}
     {% bootstrap_stylesheet_tag "responsive" %}
+    <link rel="stylesheet" href="{% static "grid.css" %}">
     <style type="text/css">
         body {
             padding-top: 60px;

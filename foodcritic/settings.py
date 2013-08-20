@@ -1,3 +1,5 @@
+import os.path
+
 # Django settings for foodcritic project.
 
 DEBUG = True
@@ -7,12 +9,14 @@ ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
 
+BASE_APP_DIR = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..'))
+
 MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '/Users/strayinsky/Documents/foodcritic/foodcritic/sqlite3.db',                      # Or path to database file if using sqlite3.
+        'NAME': os.path.join(BASE_APP_DIR, 'foodcritic/sqlite3.db'), # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
@@ -24,10 +28,10 @@ DATABASES = {
 import os
 HAYSTACK_CONNECTIONS = {
     'default': {
-        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
-        'PATH': os.path.join(os.path.dirname(__file__), 'whoosh_index'),
+        'ENGINE': 'haystack.backends.simple_backend.SimpleEngine',
     },
 }
+
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
@@ -80,6 +84,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    os.path.join(BASE_APP_DIR, 'static'),
 )
 
 # List of finder classes that know how to find static files in
@@ -120,7 +125,7 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     
-    '/Users/strayinsky/Documents/foodcritic/templates',
+    os.path.join(BASE_APP_DIR, 'templates'),
 )
 
 INSTALLED_APPS = (
