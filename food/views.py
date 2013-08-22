@@ -11,7 +11,7 @@ from django.forms.models import inlineformset_factory
 
 
 class IndexView(generic.ListView):
-    template_name = 'food/index.html'
+    template_name = 'food/restaurants.html'
     context_object_name = 'restaurant_list'
 
     def get_queryset(self):
@@ -160,3 +160,7 @@ class DishAndGrade(CreateView):
         r = Restaurant.objects.get(pk=self.kwargs['pk'])
         formset = DishFormSet(prefix='DISH')
         return render(request, 'food/dishandgrade.html', {'dishes': formset, 'restaurant': r})
+
+#homepage
+def home(request):
+    return render(request, 'food/food.html')

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>What did you eat?</h1>
+            <small> Tell us how you liked it </small>
+
+            <form class="form-inline" role="form" action="{% url 'food:addrestaurant' %}" method="post">{% csrf_token %}
+                <div class="form-group">
+                    <label class="sr-only" for="dish">Dish</label>
+                    <input type="text" class="form-control" id="dish" placeholder="Dish">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="restaurant">Restaurant</label>
+                    <input type="text" class="form-control" id="restaurant" placeholder="Restaurant">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="city">City</label>
+                    <input type="text" class="form-control" id="city" placeholder="City">
+                </div>
+                <button type="submit" class="btn btn-default">Grade</button>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

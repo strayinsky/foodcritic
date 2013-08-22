@@ -17,6 +17,9 @@ urlpatterns = patterns('',
                        url(r'^admin/', include(admin.site.urls)),
 
                        url(r'^food/', include('food.urls', namespace='food')),
+
+                       #for django-allauth
+                       url(r'^accounts/', include('allauth.urls')),
                        url(r'^accounts/login/$', 'django.contrib.auth.views.login'),
 
 )
