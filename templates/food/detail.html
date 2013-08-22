@@ -10,20 +10,26 @@
     </div>
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
-<div class="row">
-    <div class="col-lg-2"></div>
-    <div class="col-lg-4">Dish</div>
-    <div class="col-lg-4">Description</div>
-    <div class="col-lg-2"></div>
-</div>
+<table class="table table-hover">
+<thead>
+<tr>
+  <th>&nbsp</th>
+    <th><h4>Dish</h4></th>
+     <th><h4>Description</h4></th>
+    <th>&nbsp</th>
+</tr>
+</thead>
+<tbody>
 {% for dish in restaurant.dish_set.all %}
-    <div class="row">
-        <div class="span2"><a href="{% url 'food:editdish' dish.id %}">Edit</a></div>
-        <div class="span4">{{dish.name}}</div>
-        <div class="span4">{{ dish.description }}</div>
-        <div class="span2"><a href="{% url 'food:gradedish' dish.id %}">Grade</a></div>
-    </div>
+    <tr>
+        <td><a href="{% url 'food:editdish' dish.id %}">Edit</a></td>
+        <td>{{dish.name}}</td>
+        <td>{{ dish.description }}</td>
+        <td><a href="{% url 'food:gradedish' dish.id %}">Grade</a></td>
+    </tr>
 {% endfor %}
+</tbody>
+</table>
 
 <p><a href="{% url 'food:adddish' restaurant.id %}">Add a dish to this restaurant's menu</a></p>
 <p><a href="{% url 'food:dishandgrade' restaurant.id %}">Add a dish and grade it at the same time!</a></p>

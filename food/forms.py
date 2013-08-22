@@ -62,18 +62,20 @@ DishFormSet = inlineformset_factory(Restaurant,
                                     exclude=('user', 'date', 'restaurant'))
 
 
-class CitySearchForm(ModelSearchForm):
+class CitySearchForm(SearchForm):
     city = forms.CharField(required=False)
     country = forms.CharField(required=False)
 
-    models = [Restaurant]
-
+    # ModelSearchForm always uses get_models but if you don't specify the method,
+    # then it gets all the models with indices
     def get_models(self):
-        return self.models
+        return [Restaurant]
 
+    # the search method is also optional - writing out the method lets you customize it
     def search(self):
         # First, store the SearchQuerySet received from other processing.
 
+        #sqs is a SearchQuerySet (we sould have called it anything)
         sqs = super(CitySearchForm, self).search().models(*self.get_models())
 
         if not self.is_valid():
