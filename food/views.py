@@ -4,10 +4,11 @@ from django.core.urlresolvers import reverse
 from django.views import generic
 from django.contrib.auth import logout
 from django.views.generic import CreateView
-from food.forms import RestaurantForm, DishForm, GradeForm, DishFormSet
+from food.forms import RestaurantForm, DishForm, GradeForm, DishFormSet, CitySearchForm
 from food.models import Restaurant, Dish, Grade
 from django.utils import timezone
 from django.forms.models import inlineformset_factory
+from haystack.views import SearchView
 
 
 class IndexView(generic.ListView):
@@ -164,3 +165,26 @@ class DishAndGrade(CreateView):
 #homepage
 def home(request):
     return render(request, 'food/food.html')
+
+
+class YinSearchView(SearchView):
+    def get_results(self):
+        print 'this method was used'
+        q = self.get_query
+        print 'foo'
+        print q
+        if q == '':
+            return Restaurant.objects.all()
+        else:
+            return super(YinSearchView).form.search()
+
+            # def get_queryset(self):
+            #     return Restaurant.objects.all()
+            # def post(self, request):
+            #     f = CitySearchForm
+            #     sqs = self.search()
+            #     return render(request, 'food/yinsearch.html', {'restaurants': sqs, 'form': f})
+            #
+            # def get(self, request):
+            #     f = CitySearchForm
+            #     return render(request, 'food/yinsearch.html', {'restaurants': Restaurant.objects.all(),'form':f})

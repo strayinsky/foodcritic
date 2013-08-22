@@ -26,4 +26,7 @@ urlpatterns = patterns('',
                        #to summarize - what urlconf does: what url, what view, what template, what form
                        url(r'^search/', SearchView(form_class=CitySearchForm), name='haystack_search'),
 
+                       #experimental search view i'm coming up with
+                       url(r'^yinsearch/', SearchView(form_class=CitySearchForm, template='food/yinsearch.html'), name='foo'),
+
 )
